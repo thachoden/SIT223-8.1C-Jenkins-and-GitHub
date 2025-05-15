@@ -2,11 +2,6 @@ pipeline {
     agent any
 
     stages {
-        stage('trigger') {
-            steps {
-                echo 'trigger'
-            }
-        }
         stage('Build') {
             steps {
                 echo 'Compile and package the source code into the final artifact.'
